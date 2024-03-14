@@ -18,8 +18,8 @@ public class ProcessFile {
 
     public void processFile() throws IOException {     // чтение файла и анализ его содержимого с подсчетом символов
         FileReader reader = new FileReader(inputFile);
-        char[] buff = new char[50];
-        while (reader.read(buff, 0, 50) != -1)
+        char[] buff = new char[1000];
+        while (reader.read(buff, 0, 1000) != -1)
         {
             this.countSymb(buff);
         }
